@@ -1,0 +1,573 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box-grid{
+    width: 1250px;
+    margin: 0 auto;
+}
+
+body{
+    height: 100%;
+    background-image: url(./img/Background.png);
+}
+
+body::-webkit-scrollbar {
+    width: 10px; 
+}
+
+body::-webkit-scrollbar-track {
+    background-color:   #080b36;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #DDB018; 
+    border-radius: 20px; 
+}
+
+.cabecalho{
+    font-family: 'Exo', sans-serif;
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    position: fixed;
+    width: 100%;
+    height: 90px;
+    background: rgba(3, 4, 19, 0.3);
+    backdrop-filter: blur(5px);
+}
+
+.logo{
+    display: flex;
+    height: 50px;
+    margin-left: 162px;
+    margin-top: 7px;
+}
+
+.menu-nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+a{
+    text-decoration: none;  
+}
+
+li{
+    list-style-type: none;
+}
+
+nav ul li a{
+    margin-right: 55px;
+}
+
+.cabecalho ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cabecalho ul li a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.slider{
+    position: absolute;
+    width: 100%;
+}
+
+/*.cabecalho ul li .btn{
+    border: solid 1px #fff;
+    font-weight: 600;
+    padding: 5px 35px;
+    margin-right: 70px;
+    border-radius: 10px;
+    color: #fff;
+}*/
+
+/*.cabecalho ul li a:hover{
+    color: #00f3d7;
+}*/
+
+/*.btn{
+    margin-left: 100px;
+}*/
+
+/*.cabecalho .btn:hover{
+    color: #fff;
+    background-color: #EEA206;
+    transition: 0.5s ease-in-out;
+    border: solid 1px #1C2143;
+}*/
+
+main{
+    padding-top: 210px;
+}
+
+.pag-inicial{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+}
+
+.pag-inicial img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Garante que a imagem seja tratada como um bloco para melhor controle de layout */
+}
+
+.pag-inicial img{
+    max-width: 100%;
+    height: auto;
+}
+
+.pag-inicial h2{
+    font-family: 'Exo', sans-serif;
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 50px;
+}
+
+.retangulo {
+    width: 300px;
+    height: 5px;
+    background-color: #DDB018;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.pag-inicial p{
+    font-family: 'Exo', sans-serif;
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: 400;
+    padding-top: 10px;
+    text-align: center;
+    max-width: 700px;
+}
+
+.pag-inicial button{
+    border: solid 2px #DDB018;
+    background-color: transparent;
+    font-family: 'Exo', sans-serif;
+    font-weight: 600;
+    padding: 11px 20px; /* Reduz o padding horizontal para dar mais espaço ao texto */
+    margin-top: 44px;
+    border-radius: 20px;
+    color: #fff;
+    text-align: center; /* Centraliza o texto */
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.pag-inicial button:hover{
+    background-color: #DDB018;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.pag-inicial button a{
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.servicos{
+    margin-top: 308px;
+    text-align: center; /* Centraliza o conteúdo da seção, se necessário */ 
+}
+
+.servicos h2{
+    font-family: 'Exo', sans-serif;
+    font-weight: 800;
+    color: #ffffff;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 400px;
+}
+
+.cards{
+    display: flex; /* Exibe as imagens lado a lado */
+    justify-content: center; /* Centraliza as imagens na linha */
+    margin-top: 20px; /* Adiciona uma margem acima das imagens */
+}
+
+.cards img{
+    margin: 0 15px; /* Adiciona margem lateral entre as imagens */
+    margin-top: 50px; /* Adiciona margem superior às imagens */
+    max-width: 100%; /* Garante que as imagens não ultrapassem a largura do contêiner */
+    height: auto; /* Mantém a proporção das imagens */
+}
+
+/* SOBRE NÓS */
+.sobre-nos {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente o conteúdo */
+    height: auto; /* Remove a altura fixa para deixar o conteúdo fluir naturalmente */
+    padding: 100px 0; /* Adiciona padding para espaçar a seção */
+}
+
+.div-vazia {
+    text-align: center; /* Centraliza o texto */
+    max-width: 1200px; /* Limita a largura máxima da div */
+    margin: 0 auto; /* Centraliza horizontalmente a div */
+}
+
+.sobre-nos h2 {
+    font-family: 'Exo', sans-serif;
+    font-weight: 800;
+    color: #ffffff;
+    font-size: 35px;
+    margin-bottom: 30px; /* Adiciona um espaço entre o título e o texto */
+}
+
+.sobre-nos p {
+    margin-top: 20px; /* Ajusta a distância entre os parágrafos */
+    max-width: 700px;
+    font-family: 'Exo', sans-serif;
+    font-size: 22px;
+    color: #ffffff;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto; /* Garante que o texto fique centralizado */
+}
+
+/* LIDERANÇA */
+.lideranca {
+    display: flex;
+    flex-direction: column; /* Alinha o conteúdo de cima para baixo */
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0; /* Adiciona padding em vez de uma altura fixa */
+}
+
+.lideranca h2 {
+    font-family: 'Exo', sans-serif;
+    font-weight: 800;
+    color: #ffffff;
+    font-size: 35px;
+    margin-bottom: 30px; /* Adiciona espaço entre o título e o texto */
+}
+
+.lideranca p {
+    margin-top: 20px;
+    max-width: 700px;
+    font-family: 'Exo', sans-serif;
+    font-size: 22px;
+    color: #ffffff;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.perfis {
+    display: flex;
+    justify-content: center; /* Centraliza as imagens de perfil */
+    margin-top: 50px; /* Espaço entre o texto e as imagens */
+}
+
+.perfis img {
+    margin: 0 10px; /* Adiciona uma margem entre as imagens */
+    max-width: 900px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.estoque{
+    display: flex;
+}
+
+.estoque h2{
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 800;
+    color: #ffffff;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 270px;
+}
+
+.estoque p{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 22px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.estatistica{
+    display: flex;
+}
+
+.estatistica h2{
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 800;
+    color: #ffffff;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 600px;
+}
+
+.estatistica p{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 15px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.img-left{
+    width: 500px;
+    margin-top: 150px;
+    margin-right: 155px;
+}
+
+.img-right{
+    width: 500px;
+    margin-top: 150px;
+    margin-left: 145px;
+}
+
+section .casos-sucesso{
+    display: flex;
+    justify-content: space-between;
+}
+
+.casos-sucesso h2{
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 800;
+    color: #ffffff;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 290px;
+}
+
+.casos-sucesso p{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.casos-sucesso h3{
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 800;
+    color: #ffffff;
+    font-size: 25px;
+    margin-top: 40px;
+}
+
+.casos-sucesso-video{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.video{
+    margin-top: 40px;
+    margin-left: 10px;
+    align-items: center;
+}
+
+video{
+    border-radius: 5px;
+}
+
+.parceiros h2{
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 800;
+    color: #ffffff;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 200px;
+    margin-bottom: 90px;
+}
+
+.parceiros-img{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 120px;
+}
+
+.parceiros img{
+    width: 110px;
+    height: 120px;
+}
+
+footer{
+    height: 500px;
+    background-color: rgba(13, 25, 61, 0.3);
+}
+
+.box-grid-footer{
+    width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 85px;
+}
+
+.logo-footer{
+    width: 190px;
+    height: 45px;
+    margin-bottom: 40px;
+}
+
+input{
+    width: 290px;
+    height: 50px;
+    background-color: rgba(228, 228, 228, 0.101);
+    border-radius: 5px  0px 0px 5px; 
+    border-color: rgba(145, 145, 145, 0.366);
+    border-style: solid;
+}
+
+input::placeholder{
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #b1b1b1b5;
+    padding: 20px;
+}
+
+/*button{
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: #fff;
+    width: 180px;
+    background-color: #EEA206;
+    border-color: #EEA206;
+    border-style: solid;
+    border-radius: 0px 5px 5px 0px;
+}
+
+button:hover{
+    background-color: #DF622D;
+    color: #fff;
+    border-style: solid;
+}*/
+
+.input-footer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 85px;
+    margin-right: 95px;
+}
+
+.input p{
+    font-family: 'Nunito Sans', sans-serif;
+    color: #fff;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.button{
+    display: flex;
+}
+
+.sobre, .comunidade, .contato{
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 300;
+    color: #d9d9d9d7;
+    margin: 85px 0px 0px 70px;
+}
+
+.sobre h3{
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+.comunidade h3{
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+.contato h3{
+    margin-bottom: 40px;
+    margin-right: 55px;overflow-x: x;
+}
+
+.ultima-linha{
+    display: flex;
+    margin-top: 55px;
+}
+
+.ultima-linha li{
+    color: #d9d9d9d7;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 600;
+    display: flex;
+    margin-right: 55px;
+}
+
+.ultima-linha li a{
+    text-decoration: none;
+    color: #d9d9d9d7;
+}
+
+.sobre ul li{
+    margin-bottom: 10px;
+    width: 100px;
+}
+.sobre ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.sobre ul li a:hover{
+    color: #EEA206;
+    cursor: pointer;
+    transition: all 0.9s;
+}
+
+.comunidade ul li{
+    margin-bottom: 10px;
+}
+
+.comunidade ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.comunidade ul li a:hover{
+    color: #EEA206;
+    cursor: pointer;
+    transition: all 0.9s;
+}
+
+.contato ul li{
+    margin-bottom: 10px;
+    width: 170px;
+}
+
+.contato ul li:hover{
+    color: #EEA206;
+    cursor: pointer;
+    transition: all 0.9s;
+}
+
+.input span:hover{
+    cursor: pointer;
+    color: #DF622D;
+}
